@@ -1,0 +1,11 @@
+#formulario {
+    width: 90%;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+}
+label, input {
+    display: block;
+}
