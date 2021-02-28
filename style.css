@@ -1,11 +1,55 @@
+body {
+    background-color: #cbcbcb;
+    font-family: sans-serif;
+}
 #formulario {
-    width: 90%;
-    height: 600px;
-    border: 1px solid #000;
+    width: 85%;
+    min-width: 300px;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #000;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
-label, input {
-    display: block;
+.input {
+    border: 2px solid #777777;
+    padding: 7px;
+    margin: 5px 0;
 }
+label {
+    font-weight: bold;
+}
+#terminosLabel {
+    font-weight: 500;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #4574f5;
+}
+.campoInvalido, .campoInvalido:focus {
+    border: 2px solid #d80909;
+    color:  #d80909;
+}
+.mensajeError {
+    background-color:  #d80909;
+    font-size: 12px;
+    color:  white;
+    padding: 5px;
+    margin: 5px 0;
+    display: none;
+}
+.mostrar {
+    display: inline-block;
+}
+#boton {
+    width: 150px;
+    border: 2px solid #777777;
+    background-color: #ffffff;
+    padding: 12px;
+    margin: 15px 0 5px 0;
+    align-self: center;
+}
+

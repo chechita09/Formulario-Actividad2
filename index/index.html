@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <form action="#" id="formulario">
+        <label for="user">Nombre de Usuario</label>
+        <input class ="input" type="text" id="user" placeholder="jhon123">
+        <span class="mensajeError"id="mensajeError-user"></span>
+        <label for="name">Nombre</label>
+        <input class ="input" type="text" id="name">
+        <span class="mensajeError" id="mensajeError-name"></span>
+        <label for="apellido">Apellidos</label>
+        <input class ="input" type="text" id="lastName">
+        <span class="mensajeError" id="mensajeError-lastName"></span>
+        <label for="email">Correo electrónico</label>
+        <input class ="input" type="email" id="email" placeholder="ejemplo@ejemplo.com">
+        <span class="mensajeError" id="mensajeError-email"></span>
+        <label for="date">Fecha de Nacimiento</label>
+        <input class ="input" type="date" id="date">
+        <span class="mensajeError" id="mensajeError-date"></span>
+        <label for="password">Contraseña</label>
+        <input class ="input" type="password" id="password">
+        <span class="mensajeError" id="mensajeError-password"></span>
+        <label for="confPass">Confirmar contraseña</label>
+        <input class ="input" type="password" id="confPass">
+        <span class="mensajeError" id="mensajeError-confPass"></span>
+        <label id="terminosLabel" for="terminos">
+            <input class ="input" type="checkbox" id="terminos">
+            Aceptar términos y condiciones.
+        </label>
+        <span class="mensajeError" id="mensajeError-terminos"></span>
+        <span class="mensajeError" id="mensajeError-camposVacios"></span>
+        <input type="submit" value="Registrarse" id="boton">
+    </form>
+    <script>
+        require('./index.js')
+    </script>
+</body>
+</html>
